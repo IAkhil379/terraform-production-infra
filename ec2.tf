@@ -12,7 +12,7 @@ resource "aws_instance" "web_server_1" {
               echo "<h1>Production Server Alpha</h1>" > /var/www/html/index.html
               EOF
 
-  tags = { Name = "people-Web-Server-1" }
+  tags = { Name = "prod-Web-Server-1" }
 }
 
 resource "aws_instance" "web_server_2" {
