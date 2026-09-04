@@ -1,6 +1,6 @@
 resource "aws_instance" "web_server_1" {
   ami                    = "ami-0c71217cdde317cfec"
-  instance_type          = "t2.micro"
+  instance_type          = "t2.ok"
   subnet_id              = aws_subnet.private_1.id
   vpc_security_group_ids = [aws_security_group.web_sg.id]
 
