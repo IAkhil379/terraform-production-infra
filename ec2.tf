@@ -7,7 +7,7 @@ resource "aws_instance" "web_server_1" {
   user_data = <<-EOF
               #!/bin/bash
               apt-get update -y
-              apt-get install -y eueu
+              apt-get install -y nginx
               systemctl start nginx
               echo "<h1>Production Server Alpha</h1>" > /var/www/html/index.html
               EOF
